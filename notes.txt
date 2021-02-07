@@ -1,0 +1,20 @@
+This file descripes my experience with the assignment.
+
+What challenges did you encounter with this assignment, if any?
+  Might be funny, I first forgot to check whether the 3 parameters can form a triangle or not,
+  I kept trying to check the cassifyTriangle funtion and everytime I got the wrong answer.
+  Finally, I got it working by checking the 3 parameters first.
+
+What did you think about the requirements specification for this assignment?
+  I think the requirments are incomplete, and here's why:
+    - The requirements specification does not specify which programming language to use.
+    - The requirements specification does not specify the type of the parameters, are they integers? floats?
+
+What challenges did you encounter with the tools?
+  None.
+
+Describe the criteria you used to determine that you had sufficient test cases, i.e. how did you know you were done?
+  I wrote test for both right and wrong values, for example, I tested whether a triangle with 5,6,7 as parameters, as you
+  can see, 5,6,7 should be a scalene, and the tests confirms this, see below:
+  self.assertNotEqual(classifyTriangle(5,6,7),'Isosceles','5,6,7 is not isosceles')
+  self.assertEqual(classifyTriangle(5,6,7),'Scalene','5,6,7 is a scalene')
